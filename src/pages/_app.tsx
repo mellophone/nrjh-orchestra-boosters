@@ -32,9 +32,11 @@ export default function App({ Component, pageProps }: AppProps) {
         <div
           style={{
             backgroundColor: dev ? "green" : "",
+            maxWidth: `calc(100vw - ${40}px)`,
             width: 1600,
             textAlign: "left",
             display: "inline-block",
+            margin: 20,
           }}
         >
           <Component {...pageProps} />

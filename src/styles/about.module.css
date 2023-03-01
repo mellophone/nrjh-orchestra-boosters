@@ -1,0 +1,32 @@
+.boardGrid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr [col-start]);
+}
+
+@media (max-width: 1296px) {
+  .boardGrid {
+    grid-template-columns: repeat(2, 1fr [col-start]);
+  }
+}
+
+@media (max-width: 767px) {
+  .boardGrid {
+    grid-template-columns: repeat(1, 1fr [col-start]);
+  }
+}
+/* 820616 */
+
+.boardMember {
+  background-color: #f6f6f6;
+  border: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #820616;
+  padding: 15px;
+  display: block;
+}
+
+.boardMember:hover {
+  background-color: #dddddd;
+}
