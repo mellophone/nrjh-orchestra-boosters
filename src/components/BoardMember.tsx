@@ -49,14 +49,14 @@ export const BoardMember = (props: {
               justifyContent: "center",
             }}
           >
-            <div style={{ color: DARK_RED, fontSize: 25 }}>{props.name}</div>
+            <div style={{ color: DARK_RED, fontSize: 23 }}>{props.name}</div>
             <div style={{ color: DARK_GRAY, fontSize: 15 }}>
               {props.position}
             </div>
           </div>
         </div>
         {extended && props.children ? (
-          <div>
+          <div style={{ fontWeight: 300 }}>
             <br />
             {props.children}
           </div>

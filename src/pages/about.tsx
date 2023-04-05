@@ -12,20 +12,29 @@ const About = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Title>About Page</Title>
-      <p>Here are out booster club chairs for the 2023 academic year!</p>
-      <div
-        // style={{
-        //   display: "grid",
-        //   gap: 20,
-        //   gridTemplateColumns: "repeat(4, 1fr [col-start])",
-        // }}
-        className={styles.boardGrid}
-      >
-        <BoardMember name="Kristy Key" position="President" />
+      <Title>About Us</Title>
+      <p>
+        Here are our booster club chairs! You can contact us at{" "}
+        <a href="mailto:longhornstrings@gmail.com">
+          longhornstrings77584@gmail.com
+        </a>
+      </p>
+      <div className={styles.boardGrid}>
+        <BoardMember
+          name="Kristy Key"
+          position="President"
+          fileName="/Kristy.png"
+        >
+          Kristy Key is an Art teacher and a fan of all good music. She spends
+          her time transporting her favorite cello player (Lena Wills, 6th,
+          Sinfonietta) to and from various activities between cello, piano,
+          cheer, and lots of church activities. A resident of League City, her
+          daughter is a transfer student for the NRJH Orchestra Program and
+          fully dedicated to the success of this excellent program.
+        </BoardMember>
         <BoardMember name="Alejandra Zavala" position="Vice President" />
         <BoardMember
-          name="Marine Hernandez"
+          name="Marine David"
           position="Secretary"
           fileName="/Marine.png"
         >

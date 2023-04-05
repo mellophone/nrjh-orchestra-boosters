@@ -31,7 +31,7 @@ export const DesktopNavBar = () => {
             alignSelf: "center",
           }}
         >
-          NRJH Orhcestra Boosters
+          Longhorn Strings - NRJH Orhcestra Boosters
         </span>
         <div style={{ display: "flex", flexDirection: "row", flexGrow: 1 }}>
           <div style={{ flexGrow: 1, alignSelf: "center" }} />

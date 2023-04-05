@@ -1,0 +1,13 @@
+.question {
+  background-color: #f6f6f6;
+  border: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #820616;
+  padding: 15px;
+  display: block;
+}
+
+.question:hover {
+  background-color: #dddddd;
+}
