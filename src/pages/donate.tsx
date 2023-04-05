@@ -33,7 +33,7 @@ const Donate = () => {
         <Row>
           <Image
             alt="Logo"
-            src="/Logo.png"
+            src="/logo.png"
             width="380"
             height="380"
             style={{ width: "20vw", height: "20vw" }}
