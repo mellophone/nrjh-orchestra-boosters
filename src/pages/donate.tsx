@@ -30,7 +30,22 @@ const Donate = () => {
             <li>Donate any amount of your choosing!</li>
           </ol>
         </div>
-        <Image alt="PayPal Logo" src="/PayPal.png" width="400" height="400" />
+        <Row>
+          <Image
+            alt="Logo"
+            src="/Logo.png"
+            width="380"
+            height="380"
+            style={{ width: "20vw", height: "20vw" }}
+          />
+          <Image
+            alt="PayPal Logo"
+            src="/PayPal.png"
+            width="400"
+            height="400"
+            style={{ width: "20vw", height: "20vw" }}
+          />
+        </Row>
       </Row>
     </>
   );

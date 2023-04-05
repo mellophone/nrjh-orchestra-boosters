@@ -107,7 +107,13 @@ const FAQ = () => {
             Watch for our email!
           </Question>
         </div>
-        <Image alt="logo" src="/logo.png" width="515" height="515" />
+        <Image
+          alt="logo"
+          src="/logo.png"
+          width="515"
+          height="515"
+          style={{ width: "25vw", height: "25vw" }}
+        />
       </Row>
     </>
   );

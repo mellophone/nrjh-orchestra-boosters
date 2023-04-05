@@ -12,7 +12,7 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Title>Home Page</Title>
+      <Title>Welcome!</Title>
       <Row>
         <div>
           <p>
@@ -38,8 +38,8 @@ const Home = () => {
           width="1218"
           height="656"
           style={{
-            height: 400,
-            width: 742.682928,
+            height: "20vw",
+            width: "40vw",
             borderRadius: 10,
           }}
         />

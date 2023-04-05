@@ -32,6 +32,9 @@ const Join = () => {
       <div style={{ textAlign: "right" }}>
         <Button />
       </div>
+      <br />
+      <br />
+      <br />
     </>
   );
 };

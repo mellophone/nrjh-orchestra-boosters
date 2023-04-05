@@ -37,7 +37,7 @@ export default function App({ Component, pageProps }: AppProps) {
       >
         <div
           style={{
-            margin: 200,
+            margin: 100,
             marginTop: 100,
           }}
         >
