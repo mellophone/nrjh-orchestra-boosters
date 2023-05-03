@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import localFont from "@next/font/local";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export const lexend = localFont({
   src: "../fonts/Lexend/Lexend-VariableFont_wght.ttf",
@@ -12,6 +13,17 @@ export const lexend = localFont({
 export const dev = false;
 
 export default function App({ Component, pageProps }: AppProps) {
+  const [mobile, setMobile] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setMobile(window.innerWidth <= 768);
+      window.addEventListener("resize", () =>
+        setMobile(window.innerWidth <= 768)
+      );
+    }
+  }, []);
+
   return (
     <>
       <style jsx global>
@@ -21,15 +33,11 @@ export default function App({ Component, pageProps }: AppProps) {
           }
         `}
       </style>
-      <NavBar />
+      <NavBar mobile={mobile} />
       <div
         style={{
           textAlign: "center",
-          // width: "100vw",
-          // height: `calc( 100vh - 110px )`,
           backgroundColor: dev ? "blue" : "",
-          // paddingTop: 40,
-          // padding: 20,
           display: "flex",
           flexDirection: "column",
           overflowX: "hidden",
@@ -37,8 +45,9 @@ export default function App({ Component, pageProps }: AppProps) {
       >
         <div
           style={{
-            margin: 100,
-            marginTop: 100,
+            marginLeft: mobile ? 0 : 100,
+            marginRight: mobile ? 0 : 100,
+            marginTop: mobile ? 30 : 100,
           }}
         >
           <div

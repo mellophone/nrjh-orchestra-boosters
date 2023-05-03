@@ -1,7 +1,7 @@
 import { lexend } from "@/pages/_app";
 import { DARK_GRAY, DARK_RED } from "./constants";
 import Image from "next/image";
-import NavButton from "./NavButton";
+import { NavButton } from "./NavButton";
 
 export const DesktopNavBar = () => {
   return (
