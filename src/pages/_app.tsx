@@ -14,13 +14,13 @@ export const lexend = localFont({
 export const dev = false;
 
 export default function App({ Component, pageProps }: AppProps) {
-  const [mobile, setMobile] = useState<boolean>(false);
+  const [device, setDevice] = useState<string>("unknown");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setMobile(window.innerWidth <= 768);
+      setDevice(window.innerWidth <= 768 ? "mobile" : "desktop");
       window.addEventListener("resize", () =>
-        setMobile(window.innerWidth <= 768)
+        setDevice(window.innerWidth <= 768 ? "mobile" : "desktop")
       );
     }
   }, []);
@@ -40,7 +40,7 @@ export default function App({ Component, pageProps }: AppProps) {
           }
         `}
       </style>
-      <NavBar mobile={mobile} />
+      <NavBar device={device} />
       <div
         style={{
           textAlign: "center",
@@ -52,9 +52,9 @@ export default function App({ Component, pageProps }: AppProps) {
       >
         <div
           style={{
-            marginLeft: mobile ? 0 : 100,
-            marginRight: mobile ? 0 : 100,
-            marginTop: mobile ? 30 : 80,
+            marginLeft: device === "mobile" ? 0 : 100,
+            marginRight: device === "mobile" ? 0 : 100,
+            marginTop: device === "mobile" ? 30 : 80,
           }}
         >
           <div
