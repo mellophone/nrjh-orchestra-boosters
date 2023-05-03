@@ -50,9 +50,6 @@ const Donate = () => {
           />
         </Row>
       </Row>
-      <br />
-      <br />
-      <div style={{ height: "360px" }} className={styles.showMobile} />
     </>
   );
 };

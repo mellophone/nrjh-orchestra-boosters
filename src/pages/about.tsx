@@ -110,17 +110,6 @@ const About = () => {
           can. Lisa enjoys serving the Booster Team!
         </BoardMemberExtended>
       </div>
-
-      <Row>
-        <div style={{ flex: 1, backgroundColor: "orange" }}></div>
-        <div style={{ flex: 1, backgroundColor: "orange" }}></div>
-      </Row>
-      <br />
-      <br />
-      <Row>
-        <div style={{ flex: 1, backgroundColor: "orange" }}></div>
-        <div style={{ flex: 1, backgroundColor: "orange" }}></div>
-      </Row>
     </>
   );
 };

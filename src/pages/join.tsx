@@ -123,11 +123,6 @@ const Join = () => {
       <div style={{ textAlign: "right" }}>
         <Button onClick={sendEmail} state={submitState} />
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <div style={{ height: "120px" }} className={styles.showMobile} />
     </>
   );
 };

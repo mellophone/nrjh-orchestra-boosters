@@ -80,7 +80,6 @@ const Donors = () => {
           style={{ width: "100%" }}
         />
       </div>
-      <br />
     </>
   );
 };

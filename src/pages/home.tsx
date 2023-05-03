@@ -58,9 +58,6 @@ const Home = () => {
           className={styles.hideMobile}
         />
       </Row>
-
-      <div style={{ height: "70px" }} className={styles.showMobile} />
-      <div style={{ height: "33px" }} className={styles.hideMobile} />
     </>
   );
 };

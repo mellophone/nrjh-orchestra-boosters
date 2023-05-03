@@ -32,6 +32,12 @@ export default function App({ Component, pageProps }: AppProps) {
           html {
             font-family: ${lexend.style.fontFamily};
           }
+          #__next {
+            min-height: 100svh;
+            background-color: ${dev ? "aqua" : "none"};
+            display: flex;
+            flex-direction: column;
+          }
         `}
       </style>
       <NavBar mobile={mobile} />
@@ -63,28 +69,30 @@ export default function App({ Component, pageProps }: AppProps) {
             <Component {...pageProps} />
           </div>
         </div>
-        <div
+      </div>
+      <div
+        style={{
+          backgroundColor: dev ? "yellow" : "none",
+          flexGrow: 1,
+          display: "flex",
+          flexDirection: "column-reverse",
+          overflow: "hidden",
+          // height: "100%",
+          // marginTop: "auto",
+        }}
+      >
+        <Image
+          priority
+          alt="Orchestra"
+          src="/orch.png"
+          width="1920"
+          height="324"
           style={{
-            backgroundColor: dev ? "yellow" : "none",
-            flex: 1,
-            display: "flex",
-            flexDirection: "column",
-            overflow: "hidden",
-            height: 500,
+            width: "100vw",
+            height: `${100 * (324 / 1920)}vw`,
           }}
-        >
-          <Image
-            priority
-            alt="Orchestra"
-            src="/orch.png"
-            width="1920"
-            height="324"
-            style={{
-              width: "100vw",
-              height: `${100 * (324 / 1920)}vw`,
-            }}
-          />
-        </div>
+        />
+        <br />
       </div>
     </>
   );
