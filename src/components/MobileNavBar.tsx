@@ -44,6 +44,7 @@ export const MobileNavBar = () => {
             }}
           >
             <Image
+              loading="eager"
               alt="BoosterLogo"
               src="/logo.png"
               width={200}
@@ -80,6 +81,7 @@ export const MobileNavBar = () => {
             }}
           >
             <Image
+              loading="eager"
               onClick={() => {
                 setMenuState(!menuState);
               }}
