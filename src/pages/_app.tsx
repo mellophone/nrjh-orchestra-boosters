@@ -5,6 +5,7 @@ import type { AppProps } from "next/app";
 import localFont from "@next/font/local";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import "setimmediate";
 
 export const lexend = localFont({
   src: "../fonts/Lexend/Lexend-VariableFont_wght.ttf",
@@ -37,7 +38,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <div
         style={{
           textAlign: "center",
-          backgroundColor: dev ? "blue" : "",
+          backgroundColor: dev ? "blue" : "none",
           display: "flex",
           flexDirection: "column",
           overflowX: "hidden",
@@ -53,7 +54,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <div
             style={{
               maxWidth: `calc(100vw - ${40}px)`,
-              backgroundColor: dev ? "green" : "",
+              backgroundColor: dev ? "green" : "none",
               width: "100%",
               textAlign: "left",
               display: "inline-block",
@@ -64,16 +65,16 @@ export default function App({ Component, pageProps }: AppProps) {
         </div>
         <div
           style={{
-            backgroundColor: dev ? "yellow" : "",
+            backgroundColor: dev ? "yellow" : "none",
             flex: 1,
             display: "flex",
             flexDirection: "column",
             overflow: "hidden",
-            // marginTop: 185,
             height: 500,
           }}
         >
           <Image
+            priority
             alt="Orchestra"
             src="/orch.png"
             width="1920"
