@@ -2,6 +2,7 @@ import { Button, Input } from "@/components/Input";
 import { Row } from "@/components/Row";
 import { Title } from "@/components/Text";
 import Head from "next/head";
+import styles from "@/styles/join.module.css";
 
 const Join = () => {
   return (
@@ -17,24 +18,22 @@ const Join = () => {
         If you&apos;re interested in joining the booster club, please fill out
         this form below!
       </p>
-      <Row>
+      <div className={styles.grid}>
         <Input placeholder="Name" />
         <Input placeholder="Student's Name" />
-      </Row>
-      <Row>
         <Input placeholder="Email" />
         <Input placeholder="Student's Grade Level" />
-      </Row>
-      <Row>
         <Input placeholder="Phone Number" />
         <Input placeholder="Student's Instrument" />
-      </Row>
+      </div>
       <div style={{ textAlign: "right" }}>
         <Button />
       </div>
       <br />
       <br />
       <br />
+
+      <div style={{ height: "90px" }} className={styles.showMobile} />
     </>
   );
 };

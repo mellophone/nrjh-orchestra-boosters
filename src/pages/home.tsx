@@ -2,6 +2,7 @@ import { Row } from "@/components/Row";
 import { Title } from "@/components/Text";
 import Head from "next/head";
 import Image from "next/image";
+import styles from "@/styles/home.module.css";
 
 const Home = () => {
   return (
@@ -13,7 +14,19 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Title>Welcome!</Title>
-      <Row>
+      <Image
+        alt="Image"
+        src="/BoardMembers.png"
+        width="1218"
+        height="656"
+        style={{
+          height: "100%",
+          width: "100%",
+          borderRadius: 10,
+        }}
+        className={styles.showMobile}
+      />
+      <div className={styles.grid}>
         <div>
           <p>
             <b>Our Vision Statement:</b> To support and assist the NRJH
@@ -42,8 +55,11 @@ const Home = () => {
             width: "40vw",
             borderRadius: 10,
           }}
+          className={styles.hideMobile}
         />
-      </Row>
+      </div>
+
+      <div style={{ height: "70px" }} className={styles.showMobile} />
     </>
   );
 };

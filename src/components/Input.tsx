@@ -15,7 +15,6 @@ export const Input = (props: { placeholder?: string }) => {
         fontSize: 16,
         paddingLeft: 10,
         paddingRight: 10,
-        width: "100%",
         fontFamily: lexend.style.fontFamily,
         marginBottom: 10,
       }}

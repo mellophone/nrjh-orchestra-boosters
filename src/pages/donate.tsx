@@ -2,6 +2,7 @@ import { Row } from "@/components/Row";
 import { Title } from "@/components/Text";
 import Head from "next/head";
 import Image from "next/image";
+import styles from "@/styles/donate.module.css";
 
 const Donate = () => {
   return (
@@ -37,6 +38,7 @@ const Donate = () => {
             width="380"
             height="380"
             style={{ width: "20vw", height: "20vw" }}
+            className={styles.hideMobile}
           />
           <Image
             alt="PayPal Logo"
@@ -44,9 +46,11 @@ const Donate = () => {
             width="400"
             height="400"
             style={{ width: "20vw", height: "20vw" }}
+            className={styles.hideMobile}
           />
         </Row>
       </Row>
+      <div style={{ height: "360px" }} className={styles.showMobile} />
     </>
   );
 };

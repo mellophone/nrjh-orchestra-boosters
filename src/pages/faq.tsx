@@ -4,6 +4,7 @@ import { Title } from "@/components/Text";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import styles from "@/styles/FAQ.module.css";
 
 const FAQ = () => {
   return (
@@ -112,6 +113,7 @@ const FAQ = () => {
           src="/logo.png"
           width="515"
           height="515"
+          className={styles.hideMobile}
           style={{ width: "25vw", height: "25vw" }}
         />
       </Row>
