@@ -13,7 +13,7 @@ export const lexend = localFont({
 export const dev = false;
 
 export default function App({ Component, pageProps }: AppProps) {
-  const [mobile, setMobile] = useState<boolean>(false);
+  const [mobile, setMobile] = useState<boolean>(true);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
