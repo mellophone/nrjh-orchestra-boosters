@@ -47,7 +47,7 @@ export default function App({ Component, pageProps }: AppProps) {
           style={{
             marginLeft: mobile ? 0 : 100,
             marginRight: mobile ? 0 : 100,
-            marginTop: mobile ? 30 : 100,
+            marginTop: mobile ? 30 : 80,
           }}
         >
           <div

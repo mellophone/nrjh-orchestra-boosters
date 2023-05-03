@@ -13,7 +13,7 @@ const Join = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Title>Join</Title>
+      <Title>Join The Club</Title>
       <p>
         If you&apos;re interested in joining the booster club, please fill out
         this form below!

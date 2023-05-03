@@ -40,6 +40,7 @@ export const DesktopNavBar = () => {
           {NavButton("Donate")}
           {NavButton("Join")}
           {NavButton("FAQ")}
+          {NavButton("Donors")}
         </div>
       </div>
       <div

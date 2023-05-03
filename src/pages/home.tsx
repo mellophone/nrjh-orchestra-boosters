@@ -26,7 +26,7 @@ const Home = () => {
         }}
         className={styles.showMobile}
       />
-      <div className={styles.grid}>
+      <Row>
         <div>
           <p>
             <b>Our Vision Statement:</b> To support and assist the NRJH
@@ -57,9 +57,10 @@ const Home = () => {
           }}
           className={styles.hideMobile}
         />
-      </div>
+      </Row>
 
       <div style={{ height: "70px" }} className={styles.showMobile} />
+      <div style={{ height: "33px" }} className={styles.hideMobile} />
     </>
   );
 };

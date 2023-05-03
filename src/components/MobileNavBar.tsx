@@ -109,6 +109,8 @@ export const MobileNavBar = () => {
           <br />
           {MobileNavButton("FAQ")}
           <br />
+          {MobileNavButton("Donors")}
+          <br />
         </div>
         {/* <div style={{ display: "flex", flexDirection: "row", flexGrow: 1 }}>
           <div style={{ flexGrow: 1, alignSelf: "center" }} />

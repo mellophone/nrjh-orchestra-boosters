@@ -117,6 +117,7 @@ const FAQ = () => {
           style={{ width: "25vw", height: "25vw" }}
         />
       </Row>
+      <br />
     </>
   );
 };
