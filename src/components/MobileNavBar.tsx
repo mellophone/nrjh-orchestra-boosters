@@ -8,7 +8,7 @@ export const MobileNavBar = () => {
   const [menuState, setMenuState] = useState<boolean>(false);
 
   return (
-    <div style={{ position: "sticky", top: 0 }}>
+    <div style={{ position: "sticky", top: 0, zIndex: 5 }}>
       <meta name="theme-color" content={DARK_GRAY} />
       <style jsx global>{`
         html,
@@ -104,6 +104,8 @@ export const MobileNavBar = () => {
           {MobileNavButton("Home")}
           <br />
           {MobileNavButton("About")}
+          <br />
+          {MobileNavButton("Calendar")}
           <br />
           {MobileNavButton("Donate")}
           <br />

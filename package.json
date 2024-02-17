@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fullcalendar/core": "^6.1.10",
+    "@fullcalendar/daygrid": "^6.1.10",
+    "@fullcalendar/google-calendar": "^6.1.10",
+    "@fullcalendar/react": "^6.1.10",
     "@next/font": "^13.1.6",
     "@types/node": "18.13.0",
     "@types/react": "18.0.28",

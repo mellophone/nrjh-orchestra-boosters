@@ -6,10 +6,14 @@ const nextConfig = {
       {
         source: "/",
         destination: "/home",
-        permanent: true
-      }
-    ]
-  }
-}
+        permanent: true,
+      },
+    ];
+  },
+  env: {
+    GCAL_API_KEY: process.env.GCAL_API_KEY,
+    GCAL_ID: process.env.GCAL_ID,
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

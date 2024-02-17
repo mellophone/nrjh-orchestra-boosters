@@ -5,7 +5,7 @@ import { NavButton } from "./NavButton";
 
 export const DesktopNavBar = () => {
   return (
-    <div style={{ position: "sticky", top: 0 }}>
+    <div style={{ position: "sticky", top: 0, zIndex: 5 }}>
       <div
         style={{
           backgroundColor: DARK_GRAY,
@@ -37,6 +37,7 @@ export const DesktopNavBar = () => {
           <div style={{ flexGrow: 1, alignSelf: "center" }} />
           {NavButton("Home")}
           {NavButton("About")}
+          {NavButton("Calendar")}
           {NavButton("Donate")}
           {NavButton("Join")}
           {NavButton("FAQ")}
